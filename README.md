@@ -5,4 +5,5 @@
 ### :computer: list of works:
 
 #### Epam online courses homeworks
-![epam](https://github.com/VasylKravchenko/VasylKravchenko.github.io/tree/master/epam/epam_logo.jpg)
+
+![epam](https://VasylKravchenko.github.io/epam/epam_logo.jpg)
