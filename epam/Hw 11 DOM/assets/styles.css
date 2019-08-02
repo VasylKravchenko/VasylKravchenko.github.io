@@ -1,0 +1,144 @@
+* {
+    font-family: "Times new roman", serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    position: relative;
+    list-style: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2.3em;
+    color: rgb(86, 132, 202);
+}
+
+button {
+    border: none;
+    background: transparent;
+    display: block;
+}
+
+button:focus, input {
+    outline: none;
+}
+
+label {
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    top: -0.7rem;
+    display: inline;
+    color: rgb(86, 132, 202);
+}
+
+.wrapper {
+    max-width: 50%;
+    margin: 7rem auto;
+}
+
+.init-task {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+.input-task {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    border: 2px solid #bbb;
+    border-radius: .3em;
+    width: 94%;
+    padding: 1em;
+}
+
+.add-btn {
+    border: none;
+    color: #fff;
+    background: transparent;
+    margin-left: 1em;
+}
+
+.add-btn:focus {
+    outline: none;
+}
+
+.add-btn_item {
+    font-size: 2.5rem;
+    background: #bbb;
+    border-radius: .3em;
+}
+
+.line {
+    height: .7rem;
+    background: rgba(86, 132, 202, 0.3);
+    margin: 1rem 0;
+}
+
+.list-input {
+    display: none;
+    font-family: "Arial", sans-serif;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    padding: 9px;
+    width: 350px;
+    position: relative;
+    top: -12px;
+}
+
+.check-btn {
+    color: #bbb;
+}
+
+.check-btn_item {
+    line-height: 32px;
+    font-size: 32px;
+}
+
+.edit {
+    color: rgb(86, 132, 202);
+}
+
+.save {
+    color: rgb(86, 132, 202);
+}
+
+.delete {
+    color: rgb(86, 132, 202);
+    float: right;
+}
+
+.material-icons {
+    opacity: 0.6;
+}
+
+.material-icons:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.editMode {
+    height: 36px;
+}
+
+.editMode > label {
+    display: none;
+}
+
+.editMode > .list-input {
+    display: inline;
+}
+
+.editMode > button.checkbox {
+    display: none;
+}
+
+.notification {
+    color: rgb(187, 30, 30);
+    text-align: center;
+}

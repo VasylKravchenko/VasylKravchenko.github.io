@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  background: white;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: url(../img/m-h-day.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  border-radius: 0 0 40rem / 20rem 0; }
+  .header-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 80%; }
+
+.landing-logo {
+  display: flex;
+  align-items: center; }
+  .landing-logo p {
+    color: #2c2f3c;
+    margin-left: .7rem;
+    line-height: 1.3rem;
+    font-family: "Hind", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: .5rem; }
+    .landing-logo p span {
+      display: block;
+      font-size: .7rem; }
+
+.header_heading {
+  color: #2c2f3c;
+  font-size: 4.7rem;
+  font-weight: bold;
+  width: 600px;
+  margin: .5em 0;
+  line-height: 1.1em;
+  position: relative;
+  z-index: 1; }
+  .header_heading:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4.2em;
+    height: .3em;
+    bottom: .1em;
+    background-color: #14a0c7;
+    z-index: -1; }
+
+.header_text {
+  color: #2c2f3c;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4em;
+  margin-top: 2rem;
+  white-space: pre-line; }
+
+.header_button, .section_banner_button {
+  background-color: #699900;
+  font-size: 1.1rem;
+  color: white;
+  height: 3em;
+  width: 9em;
+  border: none;
+  border-radius: 3px;
+  margin-top: 2em; }
+
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+  .section_text {
+    color: #2c2f3c;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 500px;
+    margin: 1em auto;
+    position: relative; }
+    .section_text::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 4.5em;
+      height: .3em;
+      right: 25px;
+      bottom: .2em;
+      background-color: #14a0c7;
+      z-index: -1; }
+  .section_card_wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem; }
+
+.section_card {
+  display: flex;
+  flex-direction: column;
+  border: 1.3em solid #21232e;
+  width: 28%;
+  background-color: #21232e;
+  border-radius: 5px; }
+  .section_card_img {
+    width: 100%;
+    border-radius: 5px; }
+  .section_card_heading {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 1rem auto; }
+    .section_card_heading span {
+      position: relative;
+      width: 100%;
+      height: .4em;
+      bottom: .4em;
+      background-color: #14a0c7;
+      z-index: -1; }
+  .section_card_text {
+    color: #d5d7dd;
+    font-family: "Source Sans Pro", sans-serif; }
+  .section_card p {
+    text-align: center; }
+
+.section_banner {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: -3.5rem;
+  background: linear-gradient(45deg, #699900, #2c5add);
+  border-radius: 5px;
+  z-index: 1; }
+  .section_banner_text_wrap {
+    height: 7rem; }
+  .section_banner_heading {
+    color: #2c2f3c;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin-top: .7em;
+    margin-bottom: 0;
+    font-weight: bold;
+    z-index: 1; }
+    .section_banner_heading::after {
+      content: "";
+      position: relative;
+      display: block;
+      width: 2em;
+      height: .6em;
+      bottom: .4em;
+      left: 4.1em;
+      background-color: #14a0c7;
+      z-index: -1; }
+  .section_banner_text {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #d5d7dd;
+    margin-top: 0; }
+  .section_banner_button {
+    align-self: center;
+    margin: 0; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: #21232e;
+  color: #d5d7dd; }
+  .footer-wrap {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    height: 13em;
+    padding-top: 3em; }
+  .footer_text {
+    width: 30%; }
+  .footer p {
+    color: inherit;
+    font-family: "Source Sans Pro", sans-serif; }
