@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vasyl Kravchenko — Portfolio</title>
+  <meta name="description" content="Vasyl Kravchenko — portfolio and learning archive: EPAM Front-end Lab homework projects.">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --surface: #ffffff;
+      --text: #1b1d21;
+      --muted: #5f6672;
+      --line: #e3e4e8;
+      --accent: #2f6fdf;
+      --accent-soft: #e8effc;
+      --radius: 12px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111317;
+        --surface: #1a1d23;
+        --text: #e9eaee;
+        --muted: #9aa1ad;
+        --line: #2a2e36;
+        --accent: #7aa7ff;
+        --accent-soft: #1d2a44;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+
+    header { padding: 56px 0 32px; border-bottom: 1px solid var(--line); }
+    .id { display: flex; align-items: center; gap: 18px; }
+    .mono {
+      flex: none; width: 56px; height: 56px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--accent); color: #fff;
+      font-weight: 700; letter-spacing: .5px;
+    }
+    h1 { margin: 0; font-size: clamp(26px, 5vw, 34px); line-height: 1.15; }
+    .role { margin: 4px 0 0; color: var(--muted); }
+    .intro { max-width: 640px; margin: 24px 0 0; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px;
+      background: var(--surface); color: var(--text); font-size: 14px;
+    }
+    .btn:hover { border-color: var(--accent); text-decoration: none; }
+    .btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+    main { padding: 16px 0 48px; }
+    section { margin-top: 40px; }
+    .sec-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+    h2 { margin: 0; font-size: 22px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .sec-note { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+
+    .grid {
+      list-style: none; padding: 0; margin: 18px 0 0;
+      display: grid; gap: 12px;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    }
+    .card {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 14px 16px; display: flex; flex-direction: column; gap: 10px;
+    }
+    .num { font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: .6px; text-transform: uppercase; }
+    .card h3 { margin: -6px 0 0; font-size: 16px; }
+    .links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+    .links a {
+      font-size: 13px; padding: 3px 10px; border-radius: 999px;
+      background: var(--accent-soft);
+    }
+    .links a.code { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="id">
+        <div class="mono" aria-hidden="true">VK</div>
+        <div>
+          <h1>Vasyl Kravchenko</h1>
+          <p class="role">Portfolio &amp; learning archive</p>
+        </div>
+      </div>
+      <p class="intro">
+        This page collects my projects. It starts with where I began: homework from the
+        EPAM Front-end Lab online courses, kept exactly as I wrote it at the time.
+        Every project has a live demo and a link to its source code.
+      </p>
+      <div class="contacts">
+        <a class="btn" href="https://github.com/VasylKravchenko">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="fl-12">
+      <div class="sec-head">
+        <h2>EPAM Front-end Lab · FL-12</h2>
+        <span class="meta">Nov 2019 – Feb 2020 · <a href="https://github.com/VasylKravchenko/FL-12">repository</a></span>
+      </div>
+      <p class="sec-note">Second run of the course: HTML, CSS, preprocessors, responsive layout, JavaScript fundamentals and the DOM.</p>
+      <ul class="grid">
+        <li class="card"><span class="num">Homework 01</span><h3>HTML Basics</h3><div class="links"><a href="FL-12/FL12_HW1/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW1/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 02</span><h3>CSS Basics</h3><div class="links"><a href="FL-12/FL12_HW2/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW2/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 03</span><h3>Preprocessors</h3><div class="links"><a href="FL-12/FL12_HW3/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW3/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 04</span><h3>CSS Layouts</h3><div class="links"><a href="FL-12/FL12_HW4/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW4/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 05</span><h3>Responsive</h3><div class="links"><a href="FL-12/FL12_HW5/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW5/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 06</span><h3>Intro to JS</h3><div class="links"><a href="FL-12/FL12_HW6/homework/task1.html">Task 1</a><a href="FL-12/FL12_HW6/homework/task2.html">Task 2</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW6/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 07</span><h3>Control Flow</h3><div class="links"><a href="FL-12/FL12_HW7/homework/src/task1.html">Task 1</a><a href="FL-12/FL12_HW7/homework/src/task2.html">Task 2</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW7/homework/src">Code</a></div></li>
+        <li class="card"><span class="num">Homework 08</span><h3>Functions</h3><div class="links"><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW8/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 09</span><h3>Data Types</h3><div class="links"><a href="FL-12/FL12_HW9/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW9/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 10</span><h3>Scope &amp; Context</h3><div class="links"><a href="FL-12/FL12_HW10/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW10/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 11</span><h3>DOM</h3><div class="links"><a href="FL-12/FL12_HW11/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-12/tree/master/FL12_HW11/homework">Code</a></div></li>
+      </ul>
+    </section>
+
+    <section id="fl-11">
+      <div class="sec-head">
+        <h2>EPAM Front-end Lab · FL-11</h2>
+        <span class="meta">Jun – Aug 2019 · <a href="https://github.com/VasylKravchenko/FL-11">repository</a></span>
+      </div>
+      <p class="sec-note">Where it all started: my first run of the course.</p>
+      <ul class="grid">
+        <li class="card"><span class="num">Homework 01</span><h3>HTML Basics</h3><div class="links"><a href="FL-11/FL11_HW1/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW1/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 02</span><h3>CSS Basics</h3><div class="links"><a href="FL-11/FL11_HW2/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW2/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 03</span><h3>Preprocessors</h3><div class="links"><a href="FL-11/FL11_HW3/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW3/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 04</span><h3>CSS Layouts</h3><div class="links"><a href="FL-11/FL11_HW4/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW4/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 05</span><h3>Responsive</h3><div class="links"><a href="FL-11/FL11_HW5/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW5/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 06</span><h3>Intro to JS</h3><div class="links"><a href="FL-11/FL11_HW6/homework/task1.html">Task 1</a><a href="FL-11/FL11_HW6/homework/task2.html">Task 2</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW6/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 07</span><h3>Control Flow</h3><div class="links"><a href="FL-11/FL11_HW7/homework/src/task1.html">Task 1</a><a href="FL-11/FL11_HW7/homework/src/task2.html">Task 2</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW7/homework/src">Code</a></div></li>
+        <li class="card"><span class="num">Homework 08</span><h3>Functions</h3><div class="links"><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW8/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 09</span><h3>Data Types</h3><div class="links"><a href="FL-11/FL11_HW9/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW9/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 10</span><h3>Scope &amp; Context</h3><div class="links"><a href="FL-11/FL11_HW10/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW10/homework">Code</a></div></li>
+        <li class="card"><span class="num">Homework 11</span><h3>To-do List (DOM)</h3><div class="links"><a href="FL-11/FL11_HW11/homework/">Demo</a><a class="code" href="https://github.com/VasylKravchenko/FL-11/tree/master/FL11_HW11/homework">Code</a></div></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© Vasyl Kravchenko · Hosted on GitHub Pages</div>
+  </footer>
+</body>
+</html>
